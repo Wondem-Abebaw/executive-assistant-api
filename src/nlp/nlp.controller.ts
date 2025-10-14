@@ -1,11 +1,7 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { NlpService } from './nlp.service';
-import {
-  ProcessCommandDto,
-  GenerateSummaryDto,
-  SuggestResponseDto,
-} from './dto/nlp.dto';
+import { ProcessCommandDto, GenerateSummaryDto, SuggestResponseDto } from './dto/nlp.dto';
 
 @ApiTags('nlp')
 @Controller('nlp')
